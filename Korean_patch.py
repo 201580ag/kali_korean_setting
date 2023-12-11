@@ -16,6 +16,7 @@ choice = input("\033[31mDo you want to proceed with the Korean font patch instal
 if choice.lower() == 'y':
     print("\033[32mProceeding with Korean font patch installation...\033[0m")
     os.system('apt update && apt upgrade')
+    os.system('apt-get install fonts-nanum*')
     # Prompt for font input method installation
     method_choice = input("\033[31mSelect input method (1: fcitx / 2: ibus): \033[0m")
 
