@@ -27,7 +27,8 @@ if choice.lower() == 'y':
         print("\033[32mfcitx installation completed.\033[0m")
     elif method_choice == '2':
         print("\033[32mInstalling ibus...\033[0m")
-        # ibus 설치 명령어 입력(현재 패치중)
+        os.system('sudo apt install ibus ibus-hangul -y')
+        os.system('sudo im-config -c')
         print("\033[32mibus installation completed.\033[0m")
     else:
         print("\033[31mInvalid input. Please enter '1' or '2' only.\033[0m")
